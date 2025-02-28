@@ -10,7 +10,5 @@ spec:
     requests.memory: "{{ .memory }}"
     limits.cpu: "{{ .cpu }}"
     limits.memory: "{{ .memory }}"
-    requests.storage: "{{ .disk }}"
-    limits.storage: "{{ .disk }}"
 ---
 {{- end }}
