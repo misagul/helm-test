@@ -1,1 +1,2 @@
-resourceQuotas: []
+resourceQuotas: 
+  - namespace: ""
