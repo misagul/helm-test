@@ -2,4 +2,3 @@ resourceQuotas:
   - namespace: default
     memory: "4Gi"
     cpu: "2"
-    disk: "10Gi"
