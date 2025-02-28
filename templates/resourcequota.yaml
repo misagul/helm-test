@@ -1,0 +1,17 @@
+{{- range .Values.resourceQuotas }}
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: {{ .namespace }}-quota
+  namespace: {{ .namespace }}
+spec:
+  hard:
+    requests.cpu: "{{ .cpu }}"
+    requests.memory: "{{ .memory }}"
+    limits.cpu: "{{ .cpu }}"
+    limits.memory: "{{ .memory }}"
+    requests.storage: "{{ .disk }}"
+    limits.storage: "{{ .disk }}"
+---
+{{- end }}
+
